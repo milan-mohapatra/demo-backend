@@ -9,4 +9,11 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/intro')
+  async intro() {
+    return {
+      message: 'Hello I am milan mohapatra',
+    };
+  }
 }
